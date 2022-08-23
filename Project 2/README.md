@@ -1,25 +1,23 @@
 
-#Project Components
+# Project Components
 There are three components you'll need to complete for this project.
 
-##1. ETL Pipeline
+## 1. ETL Pipeline
 In a Python script, process_data.py, write a data cleaning pipeline that:
-
-Loads the messages and categories datasets
-Merges the two datasets
-Cleans the data
-Stores it in a SQLite database
-##2. ML Pipeline
+1. Loads the messages and categories datasets
+2. Merges the two datasets
+3. Cleans the data
+4. Stores it in a SQLite database
+## 2. ML Pipeline
 In a Python script, train_classifier.py, write a machine learning pipeline that:
-
-Loads data from the SQLite database
-Splits the dataset into training and test sets
-Builds a text processing and machine learning pipeline
-Trains and tunes a model using GridSearchCV
-Outputs results on the test set
-Exports the final model as a pickle file
-##3. Flask Web App
+1. Loads data from the SQLite database
+2. Splits the dataset into training and test sets
+3. Builds a text processing and machine learning pipeline
+4. Trains and tunes a model using GridSearchCV
+5. Outputs results on the test set
+6. Exports the final model as a pickle file
+## 3. Flask Web App
 We are providing much of the flask web app for you, but feel free to add extra features depending on your knowledge of flask, html, css and javascript. For this part, you'll need to:
 
-Modify file paths for database and model as needed
-Add data visualizations using Plotly in the web app. One example is provided for you
+1. Modify file paths for database and model as needed
+2. Add data visualizations using Plotly in the web app. One example is provided for you
