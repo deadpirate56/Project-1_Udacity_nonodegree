@@ -29,6 +29,17 @@ import pickle
 nltk.download(['punkt', 'wordnet','stopwords'])
 
 def load_data(database_filepath):
+    """
+    Loads data from SQLite database.
+    
+    Parameters:
+    database_filepath: Filepath to the database
+    
+    Returns:
+    X: Features
+    Y: Target
+    """
+    
     # load data from database
     engine = create_engine(f'sqlite:///{database_filepath}')
     df = pd.read_sql_table("classified_messages", con=engine)
@@ -39,6 +50,16 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
+    
+    """
+    Tokenizes and lemmatizes text.
+    
+    Parameters:
+    text: Text to be tokenized
+    
+    Returns:
+    clean_tokens: Returns cleaned tokens 
+    """
     
     tokens = word_tokenize (text)
     stop_words = set(stopwords.words('english'))
@@ -51,6 +72,13 @@ def tokenize(text):
 
 
 def build_model():
+    
+    """
+    Builds classifier and tunes model using GridSearchCV.
+    
+    Returns:
+    cv: Classifier 
+    """
     
     #Building model
     clf = RandomForestClassifier()
@@ -69,12 +97,25 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test):
+     """
+    Evaluates the performance of model and returns classification report. 
+    
+    Parameters:
+    model: classifier
+    X_test: test dataset
+    Y_test: labels for test data in X_test
+    
+    Returns:
+    Classification report for each column
+    """
+    
     Y_pred = model.predict(X_test)
     for index, column in enumerate(Y_test):
         print(column, classification_report(Y_test[column], Y_pred[:, index]))
 
 
 def save_model(model, model_filepath):
+    """ Exports the final model as a pickle file."""
     pickle.dump(model, open(model_filepath, 'wb'))
 
 
