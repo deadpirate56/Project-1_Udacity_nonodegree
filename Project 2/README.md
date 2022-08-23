@@ -1,6 +1,12 @@
+# Disaster Response Project
 
-# Project Components
-There are three components you'll need to complete for this project.
+## Summary
+
+In the Project, we'll find a data set containing real messages that were sent during disaster events. We will be creating a machine learning pipeline to categorize these events so that one can categorize and send the messages to an appropriate disaster relief agency.
+
+
+## Project Components
+There are three components to this project.
 
 ## 1. ETL Pipeline
 In a Python script, process_data.py, write a data cleaning pipeline that:
@@ -22,6 +28,28 @@ We are providing much of the flask web app for you, but feel free to add extra f
 1. Modify file paths for database and model as needed
 2. Add data visualizations using Plotly in the web app. One example is provided for you
 # Disaster Response Pipeline Project
+
+### Files in the Repository section
+app
+| - template
+| |- master.html # main page of web app
+| |- go.html # classification result page of web app
+|- run.py # Flask file that runs app
+data
+|- disaster_categories.csv # data to process
+|- disaster_messages.csv # data to process
+|- process_data.py
+
+models
+|- train_classifier.py
+
+ETL Pipeline ipynb file # file on which the process_data.py file is based on
+ML P[ipeline ipynb filr # File on which train_classifier.py file is based on
+
+
+README.md
+
+
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
