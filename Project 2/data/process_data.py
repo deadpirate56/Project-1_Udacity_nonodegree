@@ -15,6 +15,17 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
+    """
+    Loads and merges datasets from 2 filepaths.
+    
+    Parameters:
+    messages_filepath: messages csv file
+    categories_filepath: categories csv file
+    
+    Returns:
+    df: dataframe containing messages_filepath and categories_filepath merged
+    
+    """
     # loading datasets
     messages = pd.read_csv(messages_filepath)
     categories =  pd.read_csv(categories_filepath)
@@ -25,6 +36,16 @@ def load_data(messages_filepath, categories_filepath):
 
 def clean_data(df):
     
+    """
+    Cleans the dataframe
+    
+    Parameters:
+    df: DataFrame
+    
+    Returns:
+    df: Cleaned DataFrame
+    
+    """
     #expanding category columns-
     categories = df['categories'].str.split(';', expand=True)
     
@@ -56,6 +77,11 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
+    """Stores df in a SQLite database
+    
+    Parameters : df
+    
+    """
     # storing the final file in sql database
     engine = create_engine('sqlite:///{}'.format(database_filename))
     df.to_sql('classified_messages', engine, index=False, if_exists='replace') 
