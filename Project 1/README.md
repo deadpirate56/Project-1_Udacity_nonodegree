@@ -16,15 +16,15 @@
 3. How does footfall affect sales?
 4. Are the sales cyclic/seasonal in nature?
 
-### File Description
+## File Description
 "Supermarket_sales_trends.ipynb" - Attached is a colab notebook with all the data gathering, cleansing and analysis to answer the final questions
 
 
-### Blog Post
+## Blog Post
 Main findings of questions are summarized here https://medium.com/@shubham8089/selling-in-an-indian-supermarket-store-27dac39c471a
 
-### Resolution
+## Resolution
 Interesting to see the patterns emerge in the Suparmarket business and helps us understand the metrics of evaluating the business
 
-### Acknowledgement 
+## Acknowledgement 
 Thanks for providing the data - Zeta Solutions. Acknowledgement to Coursera and Udacity for their brilliant materail on data visualizations
