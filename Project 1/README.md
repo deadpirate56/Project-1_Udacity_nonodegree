@@ -17,7 +17,7 @@
 4. Are the sales cyclic/seasonal in nature?
 
 ### File Description
-"Supermarket_sales_trends_(1).ipynb" - Attached is a colab notebook with all the data gathering, cleansing and analysis to answer the final questions
+"Supermarket_sales_trends.ipynb" - Attached is a colab notebook with all the data gathering, cleansing and analysis to answer the final questions
 
 
 ### Blog Post
