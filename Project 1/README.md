@@ -22,7 +22,7 @@ README.md - File defining the business problem and approach used to solve it
 
 
 ## Blog Post
-Main findings of questions are summarized here https://medium.com/@shubham8089/selling-in-an-indian-supermarket-store-27dac39c471a
+Main findings of questions are summarized here - https://medium.com/@shubham8089/selling-in-an-indian-supermarket-store-27dac39c471a
 
 ## Summary of results
 Some key understandings coming out of the project -
