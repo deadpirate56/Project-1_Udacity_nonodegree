@@ -1,6 +1,6 @@
 # Project-1_Udacity_nonodegree
 
-## Library and Installations
+## Library installations
 1. NumPy
 2. Pandas
 3. Seaborn
