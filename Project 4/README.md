@@ -19,7 +19,6 @@ This project was inspired by the Kaggle competition - https://www.kaggle.com/com
 
 ## Medium Blog Post
 A summary of the project with it's findings can be found here - https://medium.com/@shubham8089/covid-19-mrna-vaccine-degradation-prediction-c92d17179f52
-
 ## Conclusion
 We used the sequential data aligned with mRNA molecules to build models which could predict parameters of paramount importance when it comes to understand their degradation. This was a great experience to work on a real time problem and knowing how I can make a difference using the skills I have. 
 
